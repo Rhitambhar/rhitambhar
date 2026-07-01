@@ -1,5 +1,5 @@
 /* =========================================================
-   RHITAMBHAR DUTTA — Shared Components Loader
+   RHITAMBHAR CHOUDHURY — Shared Components Loader
    Injects navbar and dock into every page dynamically
    ========================================================= */
 

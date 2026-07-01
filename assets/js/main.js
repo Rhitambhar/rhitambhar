@@ -1,5 +1,5 @@
 /* =========================================================
-   RHITAMBHAR DUTTA — Page-specific JS
+   RHITAMBHAR CHOUDHURY — Page-specific JS
    ========================================================= */
 
 /* === CERTIFICATE VIEWER === */
