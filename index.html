@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rhitambhar Choudhury</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/desktop.css" />
+</head>
+<body>
+
+<!-- Navbar injected by components.js -->
+<nav id="navbar"></nav>
+
+<!-- ============================================================
+     DESKTOP ENVIRONMENT
+     ============================================================ -->
+<div class="desktop" id="desktop">
+
+  <!-- Wallpaper grid overlay -->
+  <div class="wallpaper-grid"></div>
+
+  <!-- Top menu bar (macOS style) -->
+  <div class="menubar">
+    <div class="menubar-left">
+      <span class="menubar-logo">⬡</span>
+      <span class="menubar-item active">Rhitambhar</span>
+      <span class="menubar-item">File</span>
+      <span class="menubar-item">View</span>
+      <span class="menubar-item">Navigate</span>
+    </div>
+    <div class="menubar-right">
+      <span class="menubar-item mono" id="nav-clock">00:00</span>
+      <span class="menubar-item mono">⌘ KOL</span>
+      <span class="status-dot"></span>
+    </div>
+  </div>
+
+  <!-- Desktop icons grid -->
+  <div class="desktop-icons">
+
+    <a href="about.html" class="desktop-icon">
+      <div class="icon-img">◉</div>
+      <div class="icon-label">about.exe</div>
+    </a>
+
+    <a href="electronics.html" class="desktop-icon">
+      <div class="icon-img">⚡</div>
+      <div class="icon-label">electronics/</div>
+    </a>
+
+    <a href="design.html" class="desktop-icon">
+      <div class="icon-img">◈</div>
+      <div class="icon-label">design/</div>
+    </a>
+
+    <a href="certificates.html" class="desktop-icon">
+      <div class="icon-img">✦</div>
+      <div class="icon-label">certificates/</div>
+    </a>
+
+    <a href="publications.html" class="desktop-icon">
+      <div class="icon-img">⊞</div>
+      <div class="icon-label">papers.pdf</div>
+    </a>
+
+    <a href="mailto:your@email.com" class="desktop-icon">
+      <div class="icon-img">✉</div>
+      <div class="icon-label">contact.sh</div>
+    </a>
+
+  </div>
+
+  <!-- Terminal window - hero -->
+  <div class="window window-terminal" id="win-terminal">
+    <div class="window-titlebar">
+      <div class="window-controls">
+        <span class="wc wc-close"></span>
+        <span class="wc wc-min"></span>
+        <span class="wc wc-max"></span>
+      </div>
+      <div class="window-title">terminal — bash</div>
+      <div></div>
+    </div>
+    <div class="window-body terminal-body">
+      <div class="t-line"><span class="t-prompt">rhitambhar@portfolio</span><span class="t-sep">:</span><span class="t-path">~</span><span class="t-sym">$</span> <span class="t-cmd">whoami</span></div>
+      <div class="t-output">
+        <div class="t-name" data-typewrite="Rhitambhar Choudhury" data-speed="60"></div>
+        <div class="t-role">Engineering Student · Jadavpur University</div>
+      </div>
+      <div class="t-line mt"><span class="t-prompt">rhitambhar@portfolio</span><span class="t-sep">:</span><span class="t-path">~</span><span class="t-sym">$</span> <span class="t-cmd">cat bio.txt</span></div>
+      <div class="t-output">
+        <p class="t-bio">I build things that blink, think, and talk — embedded systems, FPGA logic, IoT hardware, and ML pipelines. Currently studying at Jadavpur University, shipping projects, and writing papers.</p>
+      </div>
+      <div class="t-line mt"><span class="t-prompt">rhitambhar@portfolio</span><span class="t-sep">:</span><span class="t-path">~</span><span class="t-sym">$</span> <span class="t-cmd blink-cursor">▌</span></div>
+    </div>
+  </div>
+
+  <!-- Stats window -->
+  <div class="window window-stats" id="win-stats">
+    <div class="window-titlebar">
+      <div class="window-controls">
+        <span class="wc wc-close"></span>
+        <span class="wc wc-min"></span>
+        <span class="wc wc-max"></span>
+      </div>
+      <div class="window-title">system — stats</div>
+      <div></div>
+    </div>
+    <div class="window-body stats-body">
+      <div class="stat-row">
+        <span class="stat-key">projects</span>
+        <div class="stat-bar-wrap"><div class="stat-bar" style="width:80%"></div></div>
+        <span class="stat-val">5+</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">papers</span>
+        <div class="stat-bar-wrap"><div class="stat-bar" style="width:20%"></div></div>
+        <span class="stat-val">1</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">certs</span>
+        <div class="stat-bar-wrap"><div class="stat-bar" style="width:60%"></div></div>
+        <span class="stat-val">6+</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">accuracy</span>
+        <div class="stat-bar-wrap"><div class="stat-bar bar-accent" style="width:98%"></div></div>
+        <span class="stat-val text-accent">98%</span>
+      </div>
+      <div class="divider-thin"></div>
+      <div class="uptime-row">
+        <span class="stat-key">status</span>
+        <span class="badge-green badge">open to work</span>
+      </div>
+      <div class="uptime-row">
+        <span class="stat-key">location</span>
+        <span class="stat-val">Kolkata, IN</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- /DESKTOP -->
+
+
+<!-- ============================================================
+     SCROLL CONTENT — below the desktop
+     ============================================================ -->
+<div class="scroll-hint">
+  <span class="mono">scroll to explore</span>
+  <span class="scroll-arrow">↓</span>
+</div>
+
+<div class="page-content">
+
+  <!-- LATEST PROJECTS -->
+  <section class="content-section reveal" id="latest-projects">
+    <div class="section-header">
+      <span class="section-tag">latest</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+      <a href="electronics.html" class="btn">view all →</a>
+    </div>
+    <div class="grid-2">
+
+      <div class="card project-card reveal">
+        <div class="card-top">
+          <span class="badge badge-green">IoT</span>
+          <span class="card-date mono">2024</span>
+        </div>
+        <h3 class="card-title">Scentiq</h3>
+        <p class="card-desc">Multi-ESP32 IoT perfume dispenser with MQTT messaging, servo-driven dispensing, and RGB LED status per slot. Migrated from WebSocket to a unified broker architecture.</p>
+        <div class="card-tags">
+          <span class="tag">ESP32</span>
+          <span class="tag">MQTT</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Arduino</span>
+        </div>
+        <a href="electronics.html" class="card-link">open project →</a>
+      </div>
+
+      <div class="card project-card reveal">
+        <div class="card-top">
+          <span class="badge badge-blue">ML · Power</span>
+          <span class="card-date mono">2024</span>
+        </div>
+        <h3 class="card-title">NILM Classifier</h3>
+        <p class="card-desc">Non-intrusive load monitoring pipeline using V-I trajectory sampling across six appliance classes. 18,000 samples, five classifiers — AdaBoost hit 98.58% CV accuracy.</p>
+        <div class="card-tags">
+          <span class="tag">MATLAB</span>
+          <span class="tag">Simulink</span>
+          <span class="tag">AdaBoost</span>
+          <span class="tag">ML</span>
+        </div>
+        <a href="publications.html" class="card-link">open project →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LATEST CERTIFICATES -->
+  <section class="content-section reveal" id="latest-certs">
+    <div class="section-header">
+      <span class="section-tag">recent</span>
+      <h2 class="section-title">Certificates</h2>
+      <div class="section-line"></div>
+      <a href="certificates.html" class="btn">view all →</a>
+    </div>
+    <div class="grid-2">
+
+      <div class="card cert-card reveal">
+        <div class="cert-icon">✦</div>
+        <div class="cert-info">
+          <h4 class="cert-title">Add your certificate title</h4>
+          <p class="cert-issuer mono">Issuer · Year</p>
+        </div>
+        <a href="certificates.html" class="btn">view →</a>
+      </div>
+
+      <div class="card cert-card reveal">
+        <div class="cert-icon">✦</div>
+        <div class="cert-info">
+          <h4 class="cert-title">Add your certificate title</h4>
+          <p class="cert-issuer mono">Issuer · Year</p>
+        </div>
+        <a href="certificates.html" class="btn">view →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED PUBLICATION -->
+  <section class="content-section reveal" id="featured-pub">
+    <div class="section-header">
+      <span class="section-tag">research</span>
+      <h2 class="section-title">Publications</h2>
+      <div class="section-line"></div>
+      <a href="publications.html" class="btn">view all →</a>
+    </div>
+    <div class="card pub-card reveal">
+      <div class="pub-card-inner">
+        <div class="pub-left">
+          <div class="pub-top">
+            <span class="badge badge-amber">Under Review</span>
+            <span class="mono" style="font-size:11px; color:var(--text-muted)">IEEE · 2024</span>
+          </div>
+          <h3 class="pub-title">Non-Intrusive Load Monitoring Using V-I Trajectory Features and Comparative Classifier Analysis</h3>
+          <p class="pub-authors mono">Rhitambhar Choudhury, Asmita Rakshit</p>
+          <p class="pub-abstract">Simulation-based NILM system using thyristor-synchronized V-I trajectory sampling across six appliance classes. Balanced 18,000-sample dataset, five classifiers evaluated — AdaBoost achieved ~98.58% cross-validation accuracy.</p>
+          <div class="pub-tags">
+            <span class="tag tag-accent">NILM</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">Power Systems</span>
+            <span class="tag">ML</span>
+          </div>
+        </div>
+        <div class="pub-right">
+          <a href="publications.html" class="btn btn-primary">read paper →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="content-section reveal" id="timeline">
+    <div class="section-header">
+      <span class="section-tag">history</span>
+      <h2 class="section-title">Timeline</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-date mono">2024 — present</div>
+        <div class="timeline-card card">
+          <span class="badge badge-green">current</span>
+          <h4>B.E. — Jadavpur University</h4>
+          <p>Pursuing Bachelor of Engineering. Focus on embedded systems, FPGA design, and machine learning applications in power electronics.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-date mono">2024</div>
+        <div class="timeline-card card">
+          <span class="badge badge-blue">project</span>
+          <h4>Scentiq — IoT Perfume Dispenser</h4>
+          <p>Built a multi-ESP32 IoT system with MQTT architecture, servo control, and Spring Boot backend.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-date mono">2024</div>
+        <div class="timeline-card card">
+          <span class="badge badge-amber">research</span>
+          <h4>IEEE Paper — NILM Classifier</h4>
+          <p>Co-authored paper on non-intrusive load monitoring using V-I trajectory features and comparative classifier analysis. Submitted for IEEE review.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-date mono">— add more —</div>
+        <div class="timeline-card card">
+          <span class="badge badge-gray">milestone</span>
+          <h4>Your milestone here</h4>
+          <p>Replace with your school, competitions, internships, achievements...</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+<!-- /SCROLL CONTENT -->
+
+<!-- Dock injected by components.js -->
+<div id="dock"></div>
+
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
